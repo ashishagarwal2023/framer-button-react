@@ -1,7 +1,7 @@
 import "./Button.css";
 import { motion } from "framer-motion"
 
-export const Button = ({gradBg = "250, 250, 250", solidBg = "15, 15, 15", overlay = "255, 255, 255", fontSize = "sm", children}) => {
+export const Button = ({gradBg = "250, 250, 250", solidBg = "15, 15, 15", overlay = "255, 255, 255", fontSize = "16px", children}) => {
   return (
     <motion.button
       style={{
@@ -30,7 +30,7 @@ export const Button = ({gradBg = "250, 250, 250", solidBg = "15, 15, 15", overla
       }}
       className="px-6 py-2 rounded-md relative radial-gradient"
     >
-      <span className={`text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask text-${fontSize}`}>
+      <span className={`text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask text-[${fontSize}]`}>
         {children}
       </span>
       <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
